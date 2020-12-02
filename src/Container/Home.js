@@ -11,8 +11,8 @@ class Home extends Component {
           <div className="w-container">
             <div className="hero-subheading">Rindu makanan daerah kamu?</div>
             <h1 className="hero-heading">JastipinAja</h1>
-                <img className="app-store" src={apple} alt="" width="28%" />
-                <img className="app-store" src={android} alt="" width="36%" />
+            <img className="app-store" src={apple} alt="" width="21%" />
+            <img className="app-store" src={android} alt="" width="27%" />
           </div>
           <img className="icon-phone" src={hp} alt="" />
       </div>
