@@ -1851,8 +1851,8 @@ p {
 .white-box {
   padding: 15px;
   border: 1px solid #dcebf7;
-  border-radius: 5px;
-  background-color: #fff;
+  border-radius: 20px;
+  background-color: #f4f7ff;
   text-align: center;
 }
 
@@ -1867,34 +1867,53 @@ p {
 }
 
 .hero-section.centered {
-  padding-top: 195px;
-  padding-bottom: 195px;
-  border-bottom: 4px solid #69b9ff;
-  background-image: -webkit-linear-gradient(270deg, rgba(46, 157, 255, 0.5), rgba(46, 157, 255, 0.22)), url("http://uploads.webflow.com/551bfa383f9283057b14ce65/55411c49864737f73f7f7e2a_photo-1416359658663-73a3834895eb.jpg");
-  background-image: linear-gradient(180deg, rgba(46, 157, 255, 0.5), rgba(46, 157, 255, 0.22)), url("http://uploads.webflow.com/551bfa383f9283057b14ce65/55411c49864737f73f7f7e2a_photo-1416359658663-73a3834895eb.jpg");
-  background-position: 0% 0%, 50% 50%;
-  background-size: auto, cover;
-  text-align: center;
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfcfc;
+    background-image: url("../Images/bg.png");
+    background-position: 50% 100%;
+    background-size: cover;
+    letter-spacing: 0.5px;
 }
 
 .hero-heading {
   margin-bottom: 30px;
   color: #fff;
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 300;
+  font-size: 84px;
+  line-height: 80px;
+  font-weight: 700;
+  font-family: 'serif';
   letter-spacing: 4px;
-  text-transform: uppercase;
 }
 
 .hero-subheading {
   margin-bottom: 40px;
-  color: #2e9dff;
+  color: gainsboro;
   font-size: 25px;
   line-height: 25px;
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.app-store {
+  cursor: pointer;
+}
+
+.icon-phone {
+  margin-right: 10%;
+  width: 20%;
+}
+
+.app-store:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .hollow-button {

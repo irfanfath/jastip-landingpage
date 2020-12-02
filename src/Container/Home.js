@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import apple from "../Assets/Images/apple1.png"
 import android from "../Assets/Images/android.png"
+import hp from "../Assets/Images/hp.png"
  
 class Home extends Component {
   render() {
@@ -8,11 +9,12 @@ class Home extends Component {
     <>
       <div className="centered hero-section">
           <div className="w-container">
-              <h1 className="hero-heading">Rindu makanan daerah kamu?</h1>
-              <div className="hero-subheading">JastipinAja</div>
-                <img src={apple} alt="" width="20%" />
-                <img src={android} alt="" width="26%" />
+            <div className="hero-subheading">Rindu makanan daerah kamu?</div>
+            <h1 className="hero-heading">JastipinAja</h1>
+                <img className="app-store" src={apple} alt="" width="28%" />
+                <img className="app-store" src={android} alt="" width="36%" />
           </div>
+          <img className="icon-phone" src={hp} alt="" />
       </div>
       <div className="section">
           <div className="w-container">
