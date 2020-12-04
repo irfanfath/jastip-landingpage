@@ -571,6 +571,7 @@ textarea.w-select {
 @media screen and (max-width: 991px) {
   .w-container {
       max-width: 728px;
+      margin-left: 20px;
   }
   .w-hidden-main {
       display: inherit !important;
@@ -1837,7 +1838,7 @@ p {
 }
 
 .section.accent {
-  background-color: #192024;
+  background-color: #2f6fcb;
 }
 
 .white-box {
@@ -1877,7 +1878,7 @@ p {
   margin-bottom: 30px;
   color: #fff;
   font-size: 74px;
-  line-height: 70px;
+  line-height: 60px;
   font-weight: 700;
   font-family: 'serif';
   letter-spacing: 4px;
@@ -1893,8 +1894,22 @@ p {
   text-transform: uppercase;
 }
 
+.hero-step {
+  color: #5a5a5a;
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
 .app-store {
   cursor: pointer;
+  width: 21%;
+}
+
+.play-store {
+  cursor: pointer;
+  width: 27%;
 }
 
 .icon-phone {
@@ -1906,6 +1921,15 @@ p {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+.w-step {
+  width: 50%;
+  display: inline-block;
+}
+
+.margin-step {
+  margin-bottom: 40px;
 }
 
 .hollow-button {
@@ -1942,9 +1966,9 @@ p {
 .section-heading.centered {
   color: #676770;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 700;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   text-transform: uppercase;
 }
 
@@ -2107,6 +2131,23 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 }
 
 @media (max-width: 991px) {
+  .app-store {
+    cursor: pointer;
+    width: 43%;
+  }
+  
+  .play-store {
+    cursor: pointer;
+    width: 55%;
+  }
+  
+  .icon-phone {
+    display: none;
+  }
+  .hero-step {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
   .navigation-link {
       color: hsla(0, 0%, 100%, 0.52);
   }
@@ -2149,7 +2190,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
       font-size: 50px;
   }
   .hero-subheading {
-      font-size: 18px;
+      font-size: 15px;
   }
   .form-field.text-area {
       display: block;
