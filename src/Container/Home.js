@@ -24,24 +24,34 @@ class Home extends Component {
                   <h2 className="centered section-heading">Gimana Caranya?</h2>
                   <div className="center section-subheading">Caranya Gampang Kok</div>
               </div>
-              <Step title="Unduh Aplikasinya" gambar={hpstep} />
+              <div className="margin-step">
+                  <div className="w-step">
+                    <div className="hero-step">Unduh Aplikasinya</div>
+                    <p>Unduh Aplikasi JastipinAja di App Store (IOS) atau Play Store (Android)</p>
+                    <img className="app-store" src={apple} alt="" />
+                    <img className="play-store" src={android} alt="" />
+                  </div>
+                  <div className="w-step">
+                    <img src={hpstep} alt=""  width="70%"/>
+                  </div>
+              </div>
               <div className="margin-step">
                   <div className="w-step">
                     <img src={hp} alt=""  width="30%"/>
                   </div>
                   <div className="w-step">
                     <div className="hero-step">Registrasi Akun Kamu</div>
-                    <p>fewuiwfhnwfnwefnwifnweoi</p>
+                    <p>Silahkan Registrasi Akun Dan Lengkapi Seluruh Data Kamu</p>
                   </div>
               </div>
-              <Step title="Enjoy Jastip" gambar={hpstep} />
+              <Step title="Enjoy Jastip" gambar={hpstep} desc="Temukan Makanan Yang Kamu Rindukan" />
           </div>
       </div>
       <div className="accent section">
             <div className="w-container">
                 <div className="section-title-group">
-                    <h2 className="centered section-heading white">services</h2>
-                    <div className="center off-white section-subheading">This is some text inside of a div block.</div>
+                    <h2 className="centered section-heading white">Informasi</h2>
+                    <div className="center off-white section-subheading">Informasi lanjut bagi anda yang ingin bergabung bersama kami</div>
                 </div>
                 <div className="w-row">
                     <div className="w-col w-col-6">
@@ -52,8 +62,7 @@ class Home extends Component {
                                 alt=""
                             />
                             <h3 className="white-text">Merchant</h3>
-                            <p className="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius.</p>
-                            <div className="hollow-button">Learn more</div>
+                            <p className="white-text">Buat kamu para pelaku usaha pemilik restaurant, rumah makan, warung makan atau yang berminat buka usaha jastip mari bergabung menjadi mitra Merchant kami.</p>
                         </div>
                     </div>
                     <div className="w-col w-col-6">
@@ -64,8 +73,7 @@ class Home extends Component {
                                 alt=""
                             />
                             <h3 className="white-text">Jastiper</h3>
-                            <p className="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius.</p>
-                            <div className="all-caps hollow-button">Learn more</div>
+                            <p className="white-text">Buat para Jastiper yang rindu makanan daerah yuk JastipinAja!</p>
                         </div>
                     </div>
                 </div>

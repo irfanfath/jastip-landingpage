@@ -5,7 +5,7 @@ const Step = (props) => {
         <div className="margin-step">
             <div className="w-step">
                 <div className="hero-step">{props.title}</div>
-                <p>fewuiwfhnwfnwefnwifnweoi</p>
+                <p>{props.desc}</p>
             </div>
             <div className="w-step">
                 <img src={props.gambar} alt=""  width="70%"/>
