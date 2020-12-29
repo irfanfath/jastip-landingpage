@@ -14,7 +14,7 @@ class Main extends Component {
                     <Route exact path="/" component={Home}/>
                     <Route path="/faq" component={Faq}/>
                     <Route path="/toc" component={Toc}/>
-                    <Route path="/invoice" component={Invoice}/>
+                    <Route path="/invoice/:idtrx" component={Invoice}/>
             </HashRouter>
         )
     }

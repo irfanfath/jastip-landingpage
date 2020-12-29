@@ -1,17 +1,14 @@
 import React from 'react';
 
 function formatPrice(n) {
-  return 'Rp '+ n.toLocaleString('en', {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  });
+  return 'Rp '+ n.toLocaleString('en');
 }
 
 function List({ list, tax }) {
   const subtotal = list.reduce((acc, item) => (
     acc + (item.quantity * item.unitPrice)
   ), 0);
-  const taxes = 15000;
+  const taxes = tax;
 
   return (
     <div className="List">
@@ -26,7 +23,7 @@ function List({ list, tax }) {
         </thead>
         <tbody>
           {list.map(item => (
-            <tr>
+            <tr key={item.name}>
               <td>{item.name}</td>
               <td className="List-number">{item.quantity}</td>
               <td className="List-number">{formatPrice(item.unitPrice)}</td>

@@ -2291,7 +2291,8 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 .Address-Block-address {
   color: #607d8b;
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
+  max-width: 320px;
 }
 
 .Address-Block-address p {

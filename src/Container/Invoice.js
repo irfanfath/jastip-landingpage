@@ -2,45 +2,71 @@ import React, { Component } from "react";
 import Address from "../Component/Invoice/Address";
 import Header from "../Component/Invoice/Header";
 import List from "../Component/Invoice/List";
+import axios from "axios";
 
 export default class Invoice extends Component {
+    state = {
+        post: [],
+        postTrx: [],
+        listProduct: []
+    }
+
+    getPostAPI = () => {
+        let id = this.props.match.params.idtrx
+        axios.get(`https://api.jastipinaja.co.id/admin/get_transaction_list/transaksi/${id}`, {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+            Accept: "application/json",
+            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+          }
+        })
+        .then((result)=>{
+            this.setState({
+                post: result.data.data,
+                postTrx: result.data.data[0].transaction_items
+            }, () => {
+                var arr = []
+                this.state.postTrx.forEach((data) => {
+                    const obj = {
+                        name: data.product.nama_produk,
+                        quantity: data.quantity,
+                        unitPrice: data.product.harga_produk,
+                      }
+                    arr.push(obj)
+                })
+                this.setState({listProduct: arr})
+            })
+        })
+    } 
+  
+    componentDidMount(){
+        this.getPostAPI();
+    }
+  
     render(){
-        const data = {
-            date: new Date().toISOString(),
-            number: 3853,
-            recipient: {
-              displayName: 'Irfan Fathurrahman',
-              addressLine: 'Jl Bandung, Antapani, Bandung',
-            },
-            emitter: {
-              displayName: 'JastipinAja',
-              addressLine: 'Jl. Jakarta, DKI Jakarta',
-            },
-            list: [
-              {
-                name: 'Daily weather report',
-                quantity: 34,
-                unitPrice: 320,
-              },
-              {
-                name: 'Email delivery service',
-                quantity: 34,
-                unitPrice: 15,
-              },
-              {
-                name: 'Weather report custom design setup',
-                quantity: 1,
-                unitPrice: 98000,
-              },
-            ],
-            tax: 0.23,
-        };
+        var dataRow = {}
+        if (this.state.post.length > 0) {
+            dataRow = {
+                date: new Date().toISOString(),
+                number: this.state.post[0].id_transaksi,
+                recipient: {
+                    displayName: this.state.post[0].users[0].nama_lengkap,
+                    addressLine: this.state.post[0].alamat_tujuan
+                },
+                emitter: {
+                    displayName: 'JastipinAja',
+                    addressLine: this.state.post[0].alamat_tujuan,
+                },
+                list: this.state.listProduct,
+                tax: this.state.post[0].ongkir,
+            }
+        }
           
         return(
             <div className="Invoice">
-                <Header date={data.date} number={data.number} />
-                <Address recipient={data.recipient} emitter={data.emitter} />
-                <List list={data.list} tax={data.tax} />
+                {this.state.post && <Header date={dataRow.date} number={dataRow.number} />}
+                {this.state.post && <Address recipient={dataRow.recipient} emitter={dataRow.emitter} />}
+                {this.state.post.length > 0 && <List list={dataRow.list} tax={dataRow.tax} />}
             </div>
         )
     }
