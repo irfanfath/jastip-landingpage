@@ -2232,3 +2232,145 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
       width: 35%;
   }
 }
+
+.Header {
+  padding-top: 20px;
+}
+
+.Header-logo {
+  padding-left: 40px;
+  float: left;
+}
+
+.Header-logo img {
+  width: 35%;
+}
+
+.Header-right {
+  float: right;
+  padding-right: 40px;
+}
+
+.Header-title {
+  float: right;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.Header-date {
+  float: right;
+  clear: right;
+  font-size: 14px;
+  color: #607d8b;
+}
+
+.Address {
+  padding: 40px 50px;
+  background-color: #f3f3f3;
+}
+
+.Address-Block {
+  float: right;
+  text-align: right;
+}
+
+.Address-Block.is-recipient {
+  float: left;
+  text-align: left;
+}
+
+.Address-Block-name {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.Address-Block-address {
+  color: #607d8b;
+  margin: 0;
+  font-size: 14px;
+}
+
+.Address-Block-address p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.List {
+  width: calc(100% - 80px);
+  color: #333;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.List-content {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.List-content th {
+  text-align: left;
+  padding: 0 10px 5px 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.List-content td {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.List-content tbody tr {
+  border-bottom: 1px solid #efefef;
+}
+
+.List-content th.List-number {
+  text-align: right;
+}
+
+.List-number {
+  text-align: right;
+}
+
+.List-totals {
+  float: right;
+  width: 280px;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+.List-totals tr {
+  border-bottom: 1px solid #fff;
+}
+
+.List-totals td {
+  padding: 10px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.List-totals td:first-child {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.Invoice {
+  width: 794px;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

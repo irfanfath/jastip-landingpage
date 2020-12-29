@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import apple from "../Assets/Images/apple1.png"
 import android from "../Assets/Images/android.png"
-import hp from "../Assets/Images/hp.png"
-import hpstep from "../Assets/Images/hp-step.png"
+import hp from "../Assets/Images/splash1.png"
+import hpstep from "../Assets/Images/Gabung.png"
+import hp2 from "../Assets/Images/Splash2.png"
 import Step from "../Component/Step";
  
 class Home extends Component {
@@ -32,7 +33,7 @@ class Home extends Component {
                     <img className="play-store" src={android} alt="" />
                   </div>
                   <div className="w-step">
-                    <img src={hpstep} alt=""  width="70%"/>
+                    <img src={hpstep} alt=""  width="30%"/>
                   </div>
               </div>
               <div className="margin-step">
@@ -44,7 +45,7 @@ class Home extends Component {
                     <p>Silahkan Registrasi Akun Dan Lengkapi Seluruh Data Kamu</p>
                   </div>
               </div>
-              <Step title="Enjoy Jastip" gambar={hpstep} desc="Temukan Makanan Yang Kamu Rindukan" />
+              <Step title="Enjoy Jastip" gambar={hp2} desc="Temukan Makanan Yang Kamu Rindukan" />
           </div>
       </div>
       <div className="accent section">
