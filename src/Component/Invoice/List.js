@@ -4,11 +4,12 @@ function formatPrice(n) {
   return 'Rp '+ n.toLocaleString('en');
 }
 
-function List({ list, tax }) {
+function List({ list, tax, fee }) {
   const subtotal = list.reduce((acc, item) => (
     acc + (item.quantity * item.unitPrice)
   ), 0);
   const taxes = tax;
+  const fees = fee
 
   return (
     <div className="List">
@@ -49,9 +50,15 @@ function List({ list, tax }) {
             </td>
           </tr>
           <tr>
+            <td>Service Charge</td>
+            <td className="List-number">
+              {formatPrice(fees)}
+            </td>
+          </tr>
+          <tr>
             <td>Total</td>
             <td className="List-number">
-              {formatPrice(subtotal + taxes)}
+              {formatPrice(subtotal + taxes + fees)}
             </td>
           </tr>
         </tbody>

@@ -59,6 +59,7 @@ export default class Invoice extends Component {
                 },
                 list: this.state.listProduct,
                 tax: this.state.post[0].ongkir,
+                fee: this.state.post[0].biaya_layanan
             }
         }
           
@@ -66,7 +67,7 @@ export default class Invoice extends Component {
             <div className="Invoice">
                 {this.state.post && <Header date={dataRow.date} number={dataRow.number} />}
                 {this.state.post && <Address recipient={dataRow.recipient} emitter={dataRow.emitter} />}
-                {this.state.post.length > 0 && <List list={dataRow.list} tax={dataRow.tax} />}
+                {this.state.post.length > 0 && <List list={dataRow.list} tax={dataRow.tax} fee={dataRow.fee} />}
             </div>
         )
     }
