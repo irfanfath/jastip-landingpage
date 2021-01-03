@@ -2363,10 +2363,14 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 
 .Invoice {
   width: 794px;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   padding-bottom: 20px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-image: url("../Images/lunas.JPG");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .clearfix:after {
