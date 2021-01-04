@@ -1,4 +1,7 @@
 version: '3.4'
+networks:
+  jastip-app:
+    driver: bridge
 
 services:
   #SERVICE
@@ -11,3 +14,5 @@ services:
     restart: always
     ports:
       - "8000:80"
+    networks:
+      - jastip-app
