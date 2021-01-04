@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  #SERVICE
+  landing-page:
+    container_name: landing-page
+    hostname: "landing-page"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8000:80"
