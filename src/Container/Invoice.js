@@ -50,12 +50,12 @@ export default class Invoice extends Component {
                 date: new Date().toISOString(),
                 number: this.state.post[0].id_transaksi,
                 recipient: {
-                    displayName: this.state.post[0].users[0].nama_lengkap,
-                    addressLine: this.state.post[0].alamat_tujuan
+                    displayName: this.state.post[0].users_merchant[0].nama_lengkap,
+                    addressLine: this.state.post[0].users_merchant[0].alamat_lengkap
                 },
                 emitter: {
-                    displayName: 'JastipinAja',
-                    addressLine: this.state.post[0].alamat_tujuan,
+                    displayName: this.state.post[0].users[0].nama_lengkap,
+                    addressLine: this.state.post[0].alamat_tujuan
                 },
                 list: this.state.listProduct,
                 tax: this.state.post[0].ongkir,

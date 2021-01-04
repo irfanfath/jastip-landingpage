@@ -2252,7 +2252,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 }
 
 .Header-title {
-  float: right;
+  float: inherit;
   font-size: 18px;
   color: #333;
   line-height: 1.5;

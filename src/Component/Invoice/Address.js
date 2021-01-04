@@ -4,6 +4,8 @@ import Block from './Block';
 function Address({ emitter, recipient }) {
   return (
     <div className="Address clearfix">
+            <div className="Header-title">Diterbitkan Oleh :</div>
+
       <Block recipient {...recipient} />
       <Block {...emitter} />
     </div>
