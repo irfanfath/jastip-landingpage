@@ -43,7 +43,7 @@ export default class Faq extends Component {
                                                 <br></br>
                                                 Whatsapp : 085574670318
                                                 <br></br>
-                                                https://paxel.co/id/track-shihpments
+                                                <a href="https://paxel.co/id/track-shipments">https://paxel.co/id/track-shipments</a>
                                             </td>
                                         </tr>
                                     </table>
