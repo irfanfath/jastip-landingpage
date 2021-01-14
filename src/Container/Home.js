@@ -9,6 +9,18 @@ import merchant from "../Assets/Images/merchant.jpg"
 import jastiper from "../Assets/Images/jastiper.jpg"
  
 class Home extends Component {
+    hanleTOC = () => {
+        this.props.history.push('/toc')
+    }
+
+    handleFAQ = () => {
+        this.props.history.push('/faq')
+    }
+
+    handlePrv = () => {
+        this.props.history.push('/privacy')
+    }
+
   render() {
     return (
     <>
@@ -94,8 +106,8 @@ class Home extends Component {
                         </div>
                     </div>
                     <div className="copyright-block right">
-                        <a href="/401" className="copyright-text right">FAQ</a><a href="/404" className="copyright-text right">Term of condition</a><a href="/style-guide" className="copyright-text right">Privacy policy</a>
-                        <a href="/licensing" className="copyright-text right">Contact us</a>
+                        <div onClick={this.handleFAQ} className="copyright-text right">FAQ</div><div onClick={this.hanleTOC} className="copyright-text right">Term of condition</div><div onClick={this.handlePrv} className="copyright-text right">Privacy policy</div>
+                        {/* <a href="/licensing" className="copyright-text right">Contact us</a> */}
                     </div>
                 </div>
         </footer>
