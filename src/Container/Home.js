@@ -82,6 +82,24 @@ class Home extends Component {
                 </div>
             </div>
         </div>
+
+
+        <footer className="footer">
+            <div className="footer-row"></div>
+                <div className="container flex">
+                    <div className="copyright-block">
+                        <div className="copyright-text">© 2021 - JastipinAja!</div>
+                        <div className="copyright-text">
+                        JastipinAja! dioperasikan oleh PT.Anjana Nata Alam yang terdaftar pada Kementrian Hukum dan HAM Republik Indonesia.
+                        </div>
+                    </div>
+                    <div className="copyright-block right">
+                        <a href="/401" className="copyright-text right">FAQ</a><a href="/404" className="copyright-text right">Term of condition</a><a href="/style-guide" className="copyright-text right">Privacy policy</a>
+                        <a href="/licensing" className="copyright-text right">Contact us</a>
+                    </div>
+                </div>
+        </footer>
+
     </>
     );
   }
