@@ -100,6 +100,10 @@ class Home extends Component {
             <div className="footer-row"></div>
                 <div className="container flex">
                     <div className="copyright-block">
+                    <div className="copyright-text right">Head Office</div>
+                    <div className="copyright-block">
+                        <p className="copyright-text right">Aldeoz Building Jl. Warung Jati Barat No 39, RT.1/RW.9, Kalibata, Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12740</p>
+                    </div>
                         <div className="copyright-text">© 2021 - JastipinAja!</div>
                         <div className="copyright-text">
                         JastipinAja! dioperasikan oleh PT.Anjana Nata Alam yang terdaftar pada Kementrian Hukum dan HAM Republik Indonesia.
