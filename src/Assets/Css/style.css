@@ -2368,7 +2368,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   padding-bottom: 20px;
   /* background-color: #fff; */
   background-image: url("../Images/lunas.JPG");
-  background-position: top;
+  /* background-position-y: 50px; */
   background-repeat: no-repeat;
   background-size: cover;
 }
