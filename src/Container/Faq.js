@@ -10,114 +10,161 @@ export default class Faq extends Component {
                     </header>
                     <div className="post-content">
                         <p>
-                            <span><strong>1) What are the minimum requirements to drive with Grab?</strong></span>
+                            <span><strong>A. Berapa Lama Waktu Pengiriman?</strong></span>
                         </p>
-                        <ul>
-                            <li><span>At least 21 years of age</span></li>
-                            <li><span>Singaporean / PR</span></li>
-                            <li><span>Minimum 2 years driving experience</span></li>
-                        </ul>
+                        <p>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berikut adalah informasi mengenai waktu pengiriman pesanan anda :</span>
+                            <ol>
+                                <li><span>Status Pesanan Dikemas</span></li>
+                                    <span> Masa pengemasan pesanan anda adalah paling lama 2 (dua) hari kalender.
+                                    Jangan khawatir apabila penjual belum merespon pesanan anda. Pesanan akan dibatalkan 
+                                    otomatis apabila melebihi waktu 2 (dua) hari kalender oleh sistem JastipinAja! dan dana 
+                                    akan dikembalikan segera ke rekening milik Pembeli.</span>
+                                <li><span>Status Pesanan Dikirim</span></li>
+                                    <span> Lama waktu pengiriman bergantung pada jasa kirim rekanan JastipinAja!. 
+                                        <br></br>
+                                        Berikut estimasi proses pengiriman pesanan dalam kondisi normal :</span>
+                                    <table border="1" cellPadding="10">
+                                        <tr bgcolor = "#45b6fe">
+                                            <td className="tdku">Jasa Kirim</td>
+                                            <td className="tdku">Lama Pengiriman</td>
+                                            <td className="tdku">Hari Operasional</td>
+                                            <td className="tdku">Kontak dan situs Pelacakan Pesanan</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="tdku">PAXEL</td>
+                                            <td className="tdku">Sameday Delivery</td>
+                                            <td className="tdku">Senin s/d Jumat pukul 9.00 WIB s/d pukul 18.00 WIB 
+                                                <br></br>
+                                                (Sabtu, Minggu, dan Hari 
+                                                Libur Nasional tutup)
+                                            </td >
+                                            <td className="tdku"> Email : wehearyou@paxel.co
+                                                <br></br>
+                                                Whatsapp : 085574670318
+                                                <br></br>
+                                                https://paxel.co/id/track-shihpments
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <span>Anda bisa melacak pesanan dengan cara meng “copy paste” nomor 
+                                        resi yang diberikan oleh Penjual pada situs web pelacakan jasa kirim rekanan JastipinAja!.</span>
+                            </ol>
+                        </p>
                         <hr />
-                        <ul>
-                            <li>Wed: 7pm</li>
-                            <li>Sat: 2pm</li>
-                        </ul>
-                        <p>18 Sin Ming Lane, #01-11, Midview City, Singapore 573960</p>
-                        <hr />
+
                         <p>
-                            <span><b>3) What incentives does Grab offer?</b></span>
+                            <span><strong>B. Bagaimana Cara Menghubungi Pusat Bantuan JastipinAja! ?</strong></span>
                         </p>
                         <p>
-                            <span>As a Grab driver-partner, you will receive a weekly email regarding our incentives. For more info, click </span>
-                            <a href="https://www.grab.com/sg/blog/driver/car/" target="_blank" rel="noopener noreferrer"><span>here</span></a>
-                            <span>. </span>
-                        </p>
-                        <hr />
-                        <p>
-                            <span><b>4) How and when do I get paid?</b></span>
-                        </p>
-                        <p>
-                            <span>
-                                Our flexible payment options allow for cash jobs. This means you can receive your fare earnings at the end of each trip. Alternatively, for credit card jobs, you will receive payment every week directly to your bank
-                                account.
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Anda dapat menghubungi kami melalui email : jastipinaja@aldeoz.com</span>
+                            <br></br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Waktu operasional Pusat Bantuan adalah Hari Senin s/d Jumat pukul 8.00 WIB s/d pukul 
+                                16.00 WIB (Hari Libur Nasional, Sabtu dan Minggu tutup).</span>
+                            <br></br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berikut ini adalah beberapa topik yang sering ditanya, silakan memahami seputar 
+                                topik berikut sebelum menghubungi Pusat Bantuan JastipinAja! :
+                                <br></br>
                             </span>
+
+                            <ol>
+                                <li><span>Apa yang harus saya lakukan jika saya lupa password akun saya?</span></li>
+                                <span>Pada halaman login, klik Lupa Password? Selanjutnya notifikasi mengenai prosedur 
+                                    penggantian password akan dikirimkan ke email yang digunakan pada saat membuat akun</span>
+                                
+                                <li><span>Apakah pengguna dapat mendaftar sebagai penjual dan pembeli dengan email yang sama?</span></li>
+                                <span>Untuk saat ini, pengguna dapat mendaftar sebagai penjual dan pembeli namun
+                                    dengan alamat email yang berbeda.</span>
+
+                                <li><span>Bagaimana cara melihat performa dari Toko Penjual?</span></li>
+                                <span>JastipinAja! menilai performa Toko dari jumlah produk terjual yang ditampilkan di
+                                    setiap deskripsi produk.</span>
+                                
+                                <li><span> Mengapa Saya tidak bisa menyelesaikan pembayaran untuk transaksi pembelian
+                                    Barang di lebih dari 1 (satu) Toko?</span></li>
+                                <span> Saat ini setiap proses pembayaran hanya berlaku untuk transaksi di 1 (satu) Toko saja. Apabila Pembeli ingin melakukan 
+                                    transaksi di lebih dari 1 (satu) Toko, maka harus melakukan proses pembayaran lebih dari satu kali.</span>
+
+                                <li><span> Apakah Saya dapat mengirim barang untuk orang lain?</span></li>
+                                <span>Pembeli dapat membeli Barang dan mengirimkan barang tersebut untuk orang lain dengan cara klik Ganti Detail Pengiriman untuk memasukkan detail data pengirim dan penerima 
+                                    (nama, no telepon pengirim dan nama, no telepon penerima di kolom Catatan, serta mengganti alamat menjadi alamat penerima). </span>
+
+                                <li><span> Bagaimana cara merubah nomor rekening Penjual yang sudah terdaftar di Aplikasi JastipinAja! ?</span></li>
+                                <span> Penjual dapat merubah nomor rekeningnya dengan cara mengirimkan email ke alamat : JastipinAja@aldeoz.com.</span>
+                            </ol>
                         </p>
                         <hr />
+
+                        <p><span><strong>C. Proses Pembatalan dan Pengembalian Dana</strong></span></p>
                         <p>
-                            <span><b>5) Does Grab take any commission?</b></span>
+                            <ol>
+                                <li><span>[Pembeli] Proses Pembatalan dan Pengembalian Dana</span></li>
+                                <ul>
+                                    <li><span>Pembeli tidak dapat melakukan pembatalan atas transaksi yang telah berhasil
+                                            dibayar. Oleh karena itu, pembeli diharapkan benar-benar mengecek kembali
+                                            pesanannya sebelum melakukan pembayaran.</span></li>
+                                    <li><span> Pembeli dapat mengajukan komplain atas barang pesanannya (meliputi, namun
+                                            tidak terbatas pada : kesalahan nomor resi yang diinput oleh Penjual sehingga tidak 
+                                            dapat dilacak pada situs web jasa pengiriman, barang tidak diterima Pembeli dalam waktu 2 (dua) 
+                                            hari sejak dikirim, atau barang yang diterima 
+                                            tidak sesuai dengan pesanan) dengan cara mengirimkan email ke alamat : JastipinAja@aldeoz.com.</span></li>
+                                    <li><span> Selanjutnya email akan diproses oleh pihak JastipinAja! paling lambat 2x24jam pada jam kerja customer service.</span></li>
+                                    <li><span> Apabila dirasa perlu, maka pihak JastipinAja! akan membuat diskusi chat 
+                                        antara Penjual dan Pembeli untuk mencari kesepakatan atas solusi masalah tersebut.</span></li>
+                                    <li><span> Apabila hasil keputusan adalah pengembalian dana ke pembeli, maka JastipinAja! akan meminta nomor rekening pembeli dan dana akan ditransfer 
+                                            paling lambat 2 (dua) hari kerja setelah diterimanya nomor rekening pembeli.</span></li>
+                                </ul>
+
+                                <li><span>[Penjual] Proses Pembatalan dan Pengembalian Dana</span></li>
+                                <ul>
+                                    <li><span> Penjual dapat melakukan pembatalan order dari Pembeli dengan cara tidak
+                                            memprosesnya selama 2 (dua) hari, sehingga pesanan otomatis akan dibatalkan
+                                            oleh sistem JastipinAja!.</span></li>
+                                    <li><span> Apabila pembeli mengajukan komplain karena barang tidak diterima maka pihak
+                                            JastipinAja! akan menghubungi penjual dan penjual harus mengirimkan beberapa dokumen dan
+                                             bukti bahwa penjual telah mengirimkan pesanan. Jika penjual tidak bisa memberikan bukti, 
+                                             maka JastipinAja! akan mengembalikan dana sepenuhnya kepada pembeli. Dokumen dan bukti yang 
+                                             dibutuhkan adalah : (i) Bukti pengiriman barang resmi-kwitansi pengiriman barang; (ii) Foto 
+                                             bungkus/informasi paket, termasuk informasi jasa kirim yang bersangkutan, nomor resi, nama 
+                                             penjual dan pembeli, nomor kontak dan alamat tujuan pengiriman. Mohon diperhatikan bahwa dana 
+                                             yang bersangkutan akan secara otomatis dikirimkan kepada Pembeli apabila anda tidak menjawab 
+                                             permintaan dokumen oleh JastipinAja! dalam 2 (dua) hari dari tanggal JastipinAja! menghubungi 
+                                             penjual.</span></li>
+                                    <li><span> JastipinAja! menyarankan penjual untuk berkomunikasi dengan pembeli lebih lanjut apabila 
+                                        terdapat pengaduan komplain dari pembeli. Terdapat 2 pilihan apabila ada pengaduan dari pembeli yaitu : 
+                                        (i) Penjual menerima komplain dari pembeli dan menyetujui pengembalian dana kepada pembeli; (2) Mengajukan 
+                                        keberatan kepada JastipinAja! jika penjual tidak menyetujui permintaan pembeli, sehingga JastipinAja! melakukan 
+                                        mediasi atas masalah tersebut. Penjual disarankan untuk menyiapkan dokumen pendukung alas an penolakan sehingga 
+                                        proses mediasi dapat berjalan dengan lancar.</span></li>
+                                </ul>
+                            </ol>
                         </p>
-                        <p><span>Yes, Grab takes a maximum of 20% commission. </span></p>
-                        <hr />
+                        <hr/>
+
+                        <p><span><strong>D. Bagaimana Cara Mengelola Toko</strong></span></p>
                         <p>
-                            <span><b>6) I already have a job. Can I still drive with Grab?</b></span>
+                            <ol>
+                                <li><span>Harga yang tercantum pada deskripsi produk adalah harga yang belum termasuk ongkos kirim. Ongkos kirim ini akan 
+                                    terlihat saat checkout beserta jumlah total pesanan yang harus dibayar.</span></li>
+                                <li><span>Anda dapat mengubah harga produk anda kapan pun, tetapi apabila pembeli telah memesan suatu produk, 
+                                    harga produk atas pesanan tersebut tidak dapat diubah.</span></li>
+                                <li><span>Harga barang sudah termasuk harga packaging.</span></li>
+                            </ol>
                         </p>
-                        <p><span>Of course! We have a lot of part-time drivers on our platform. This is because there are no minimum hours required to drive with us. </span></p>
-                        <hr />
+                        <hr/>
+
+                        <p><span><strong>E. Mengapa Alamat Pengiriman Saya Tidak Didukung Oleh Jasa Kirim?</strong></span></p>
                         <p>
-                            <span><b>7) I don’t have a car. Can I still drive with Grab?</b></span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saat ini JastipinAja! bekerjasama dengan Jasa Kirim Paxel dimana belum semua wilayah di Indonesia tercover oleh Paxel.
+                           Untuk memastikan apakah alamat anda sudah tercover oleh layanan jasa kirim Paxel dapat klik <a href="https://paxel.co/">DISINI.</a></span>
                         </p>
+                        <hr/>
+
+                        <p><span><strong>F. Apakah yang dimaksud dengan Request Produk?</strong></span></p>
                         <p>
-                            <span>Sure thing! You have the option of renting from our exclusive partner </span><a href="http://grab.com/sg/fleet" target="_blank" rel="noopener noreferrer"><span>fleets</span></a>
-                            <span>, or any other rental company. Rental rates start as low as $50/day.</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Request Produk adalah layanan yang diberikan oleh JastipinAja! untuk memberikan kesempatan bagi Pembeli yang ingin 
+                                membeli suatu Barang namun belum tersedia di aplikasi JastipinAja!. Pembeli cukup menuliskan detail mengenai Barang yang diinginkan di halaman Request 
+                                Produk, maka selanjutnya akan ada Penjual di aplikasi JastipinAja! yang mengambil Request tersebut.</span>
                         </p>
-                        <hr />
-                        <p>
-                            <span><b>8) What is PDVL (Private Hire Car Driver’s Vocational Licence)?</b></span>
-                        </p>
-                        <p><span>PDVL refers to the official licence required for all drivers who wish to provide chauffeured services. This regulation is a requirement by LTA and is estimated to take effect by mid 2017.</span></p>
-                        <hr />
-                        <p>
-                            <span><b>9) I have questions. How can I reach you?</b></span>
-                        </p>
-                        <p>
-                            <span>Find out more at </span><a href="https://www.grab.com/sg/driver/car/" target="_blank" rel="noopener noreferrer"><span>grab.com/driver/car</span></a><span> or visit our office at:</span>
-                        </p>
-                        <p><span>28 Sin Ming Lane, #01-143 Midview City, Singapore 573972</span></p>
-                        <p><span>Our opening hours are as follows:</span></p>
-                        <ul>
-                            <li><span>Monday &#8211; Friday: 10am &#8211; 6pm</span></li>
-                            <li><span>Saturdays, Sundays &amp; PH: Closed</span></li>
-                        </ul>
-                        <p>&nbsp;</p>
-                        <p>
-                            <span><b>10) I’m ready to sign up to drive with Grab. What are my next steps?</b></span>
-                        </p>
-                        <p><span>We’re thrilled that you’re taking your first steps with Grab! Please click on the buttons below for a step-by-step guide for driving with Grab.</span></p>
-                        <p>
-                            <span><b>11) I have other commitments on weekdays. Can I submit my application online?</b></span>
-                        </p>
-                        <p>I have other commitments on weekdays. Can I submit my application online?</p>
-                        <p>Yes, of course! Simply visit <a href="http://signup.grab.com">signup.grab.com</a> at your convenience to submit your application along with your supporting documents.</p>
-                        <hr />
-                        <p>
-                            <span><b>12) Why does my car need to be registered as Z10/Z11?</b></span>
-                        </p>
-                        <p><span>This is a requirement by LTA. A Z10/Z11 vehicle log refers to private hire cars.</span></p>
-                        <hr />
-                        <p>
-                            <span><b>13) Why does my car need to be commercially insured?</b></span>
-                        </p>
-                        <p><span>With commercial insurance, both you and your rider will be adequately protected should an accident happen.</span></p>
-                        <hr />
-                        <p>
-                            <span><b>14) Does the ownership of my car need to be changed to my new business prior to driving with Grab?</b></span>
-                        </p>
-                        <p><span>Yes, the ownership of your car needs to be transferred to your new business. In order to transfer, you have the option of refinancing your loan or paying off your loan in full. </span></p>
-                        <hr />
-                        <p>
-                            <span><b>15) What should I do if my car loan is not fully paid up?</b></span>
-                        </p>
-                        <p><span>If your car is still on loan, you will need to refinance your car loan. Please talk to our preferred refinancing partner for help. </span></p>
-                        <p>
-                            <span>Eugene Tay</span><span><br /> </span><span>UOB | Group Retail &#8211; Business Banking</span><span><br /> </span><span>Tel: <a href="tel:6424-6793">6424 6793</a></span><span><br /> </span>
-                            <span>HP: <a href="tel:8100-7338">8100 7338</a></span><span><br /> </span><span>Address: 156 Cecil Street FEB Building, #11-01 Singapore 069544</span><span><br /> </span>
-                            <span>Email: <a href="mailto:Eugene.Tayyg@uobgroup.com?">Eugene.Tayyg@uobgroup.com</a></span>
-                        </p>
-                        <hr />
-                        <p>
-                            <span><b>16) Does driving with Grab affect my road tax?</b></span>
-                        </p>
-                        <p><span>No. Road tax is determined by the size of the car and not how it is being used. </span></p>
+
                     </div>
                 </div>
             </div>
