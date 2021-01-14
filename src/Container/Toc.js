@@ -209,12 +209,43 @@ export default class Toc extends Component {
                             <li>Batasan Tanggung Jawab</li>
                             <p>JastipinAja! adalah aplikasi dengan model Customer to Customer Marketplace, yang menyediakan layanan kepada Pengguna untuk dapat menjadi Penjual maupun Pembeli di Aplikasi JastipinAja!. Dengan demikian transaksi yang terjadi adalah transaksi antar member JastipinAja!, sehingga pengguna memahami bahwa batasan tanggung jawab JastipinAja! secara proporsional adalah sebagai penyedia jasa Aplikasi.</p>
                             <p>JastipinAja! selalu berupaya untuk menjaga Layanan JastipinAja! aman, nyaman, dan berfungsi dengan baik, tapi kami tidak dapat menjamin operasi terus-menerus atau akses ke layanan kami dapat selalu sempurna. Informasi dan data dalam Aplikasi JastipinAja! memiliki kemungkinan tidak terjadi secara real time.</p>
+                            <p>Pengguna setuju bahwa pengguna memanfaatkan layanan JastipinAja! atas resiko pengguna sendiri, dan layanan JastipinAja! diberikan kepada pengguna “SEBAGAIMANA ADANYA” dan “SEBAGAIMANA TERSEDIA”.</p>
+                            <p>Sejauh diizinkan oleh hukum yang berlaku, JastipinAja! (termasuk Perusahaan, direktur, dan karyawan) adalah tidak bertanggung jawab, dan pengguna setuju untuk tidak menuntut JastipinAja! bertanggung jawab, atas segala kerusakan atau kerugian (termasuk namun tidak terbatas pada hilangnya uang, reputasi, keuntungan, atau kerugian tak berwujud lainnya) yang diakibatkan secara langsung atau tidak langsung dari :</p>
+                            <ol type="a">
+                                <li>Penggunaan atau ketidakmampuan pengguna dalam menggunakan layanan JastipinAja!</li>
+                                <li>Harga, pengiriman atau petunjuk lainnya yang tersedia dalam layanan JastipinAja!</li>
+                                <li>Keterlambatan atau gangguan dalam layanan JastipinAja!</li>
+                                <li>Kelalaian atau kerugian yang ditimbulkan oleh masing –masing pengguna</li>
+                                <li>KualitasBarang</li>
+                                <li>Pengiriman Barang</li>
+                                <li>Pelanggaran Hak atas Kekayaan Intelektual</li>
+                                <li>Perselisihan antar pengguna</li>
+                                <li>Pencemaran nama baik pihak lain</li>
+                                <li>Setiap penyalahgunaan Barang yang sudah dibeli pihak pengguna</li>
+                                <li>Kerugian akibat pembayaran tidak resmi kepada pihak lain selain ke rekening resmi JastipinAja!, yang dengan cara apapun mengatas-namakan JastipinAja! ataupun kelalaian pihak bank</li>
+                                <li>Virus atau perangkat lunak berbahaya lainnya (bot, script, automation tool, hacking tool) yang diperoleh dengan mengakses atau menghubungkan ke layanan JastipinAja!</li>
+                                <li>Gangguan, bug, kesalahan atau ketidakakuratan apapun dalam layanan JastipinAja!</li>
+                                <li>Kerusakan pada perangkat keras pengguna dari penggunaan setiap layanan JastipinAja!</li>
+                                <li>Isi, tindakan, atau tidak adanya tindakan dari pihak ketiga termasuk terkait dengan produk yang ada dalam Aplikasi JastipinAja! yang diduga palsu</li>
+                                <li>Tindak penegakan yang diambil sehubungan dengan akun pengguna</li>
+                                <li>Adanya tindakan peretasan yang dilakukan oleh pihak ketiga kepada akun pengguna</li>
+                            </ol>
                             <li>Pelepasan</li>
+                            <p>Jika anda memiliki perselisihan dengan satu atau lebih pengguna, Anda akan melepaskan JastipinAja! (termasuk Perusahaan, direktur, dan karyawan) dari klaim dan tuntutan atas kerusakan dan kerugian (aktual dan tersirat) dari setiap jenis dan sifatnya, yang dikenal dan tidak dikenal, yang timbul dari atau dengan cara apapun berhubungan dengan sengketa tersebut, termasuk namun tidak terbatas pada kerugian yang timbul dari pembelian barang yang telah dilarang pada Poin J. Dengan demikian maka Pengguna dengan sengaja melepaskan segala perlindungan hukum (yang terdapat dalam Undang Undang atau peraturan hukum yang lain) yang akan membatasi cakupan ketentuan pelepasan ini.</p>
                             <li>Ganti Rugi</li>
+                            <p>Pengguna akan melepaskan JastipinAja! dari tuntutan ganti rugi dan menjaga JastipinAja! (termasuk Perusahaan, Direktur, dan karyawan) dari setiap klaim atau tuntutan, termasuk biaya hukum yang wajar, yang dilakukan oleh pihak ketiga yang timbul dalam hal anda melanggar Perjanjian ini, penggunaan layanan JastipinAja! yang tidak semestinya dan/atau pelanggaran anda terhadap hukum atau hak-hak pihak ketiga.</p>
                             <li>Pilihan Hukum</li>
+                            <p>Perjanjian ini akan diatur oleh dan ditafsirkan sesuai dengan hukum Republik Indonesia, tanpa memperhatikan pertentangan aturan hukum. Anda setuju bahwa tindakan hukum apapun atau sengketa yang mungkin timbul dari, berhubungan dengan, atau berada dalam cara apapun berhubungan dengan aplikasi dan/atau Perjanjian ini akan diselesaikan secara ekslusif dalam yuridiksi pengadilan Republik Indonesia.</p>
                             <li>Pembaharuan</li>
+                            <p>Syarat & Ketentuan mungkin diubah dan/atau diperbaharui dari waktu ke waktu tanpa pemberitahuan sebelumnya. JastipinAja! menyarankan agar anda membaca secara seksama dan memeriksa halaman Syarat & Ketentuan ini dari waktu ke waktu untuk mengetahui perubahan apapun. Dengan tetap mengakses dan menggunakan layanan JastipinAja!, maka pengguna dianggap menyetujui perubahan-perubahan dalam Syarat & Ketentuan.</p>
                             <li>Biaya Layanan</li>
-                            <li></li>
+                            <p>Biaya Layanan adalah biaya yang dikenakan kepada pengguna untuk tujuan pemeliharaan sistem dan peningkatan layanan dalam bertransaksi melalui aplikasi JastipinAja! dengan ketentuan sebagai berikut :</p>
+                            <ol type="i">
+                                <li>Apabila transaksi dibatalkan, maka dana yang dikembalikan ke Pembeli tidak termasuk Biaya Layanan.</li>
+                                <li>Pengguna memahami dan menyetujui untuk membebaskan JastipinAja! dari segala bentuk tanggung jawab apabila adanya kerugian yang diderita oleh pengguna atas transaksi yang dilakukan pada aplikasi JastipinAja!.</li>
+                            </ol>
+                            <p>JastipinAja! berhak sewaktu-waktu tanpa pemberitahuan sebelumnya untuk melakukan perubahan sebagian dan/atau seluruh isi pasa Syarat & Ketentuan ini secara dari waktu ke waktu.</p>
+                            <p>Dengan melakukan transaksi pada Aplikasi JastipinAja!, pengguna dianggap memahami dan menyetujui Syarat & Ketentuan yang berlaku.</p>
                         </ol>
                     </div>
                 </div>
