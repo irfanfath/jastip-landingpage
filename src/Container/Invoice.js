@@ -48,7 +48,7 @@ export default class Invoice extends Component {
         var dataRow = {}
         if (this.state.post.length > 0) {
             dataRow = {
-                date: new Date().toISOString(),
+                date: this.state.post[0].settlement_time,
                 number: this.state.post[0].id_transaksi.substring(24,36),
                 recipient: {
                     displayName: this.state.post[0].users_merchant[0].nama_lengkap,
