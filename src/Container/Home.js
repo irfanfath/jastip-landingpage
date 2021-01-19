@@ -77,7 +77,7 @@ class Home extends Component {
                                 alt=""
                             />
                             <h3 className="white-text">Customer</h3>
-                            <p className="white-text">Buat para Customer yang rindu makanan daerah yuk JastipinAja!</p>
+                            <p className="white-text">Buat para customer yang rindu makanan daerah yuk JastipinAja!</p>
                         </div>
                     </div>
                     <div className="w-col w-col-6">
@@ -88,7 +88,7 @@ class Home extends Component {
                                 alt=""
                             />
                             <h3 className="white-text">Merchant</h3>
-                            <p className="white-text">Buat kamu para pelaku usaha pemilik restaurant, rumah makan, warung makan atau yang berminat buka usaha jastip mari bergabung menjadi mitra Merchant kami.</p>
+                            <p className="white-text">Buat kamu para pelaku usaha (pemilik restaurant, rumah makan, warung makan) atau yang berminat buka usaha jastip mari bergabung menjadi mitra Merchant kami.</p>
                         </div>
                     </div>
                 </div>
