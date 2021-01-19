@@ -3,6 +3,7 @@ import Address from "../Component/Invoice/Address";
 import Header from "../Component/Invoice/Header";
 import List from "../Component/Invoice/List";
 import axios from "axios";
+import ListMerc from "../Component/Invoice/ListMerc";
 
 export default class Invoice extends Component {
     state = {
@@ -48,7 +49,7 @@ export default class Invoice extends Component {
         if (this.state.post.length > 0) {
             dataRow = {
                 date: new Date().toISOString(),
-                number: this.state.post[0].id_transaksi,
+                number: this.state.post[0].id_transaksi.substring(24,36),
                 recipient: {
                     displayName: this.state.post[0].users_merchant[0].nama_lengkap,
                     addressLine: this.state.post[0].users_merchant[0].alamat_lengkap
@@ -64,11 +65,17 @@ export default class Invoice extends Component {
         }
           
         return(
+            <>
             <div className="Invoice">
                 {this.state.post && <Header date={dataRow.date} number={dataRow.number} />}
                 {this.state.post && <Address recipient={dataRow.recipient} emitter={dataRow.emitter} />}
                 {this.state.post.length > 0 && <List list={dataRow.list} tax={dataRow.tax} fee={dataRow.fee} />}
             </div>
+            <div className="Invoice-merc">
+                {this.state.post && <Header date={dataRow.date} number={dataRow.number} />}
+                {this.state.post.length > 0 && <ListMerc list={dataRow.list} tax={dataRow.tax} fee={dataRow.fee} />}
+            </div>
+            </>
         )
     }
 }

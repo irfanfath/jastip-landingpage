@@ -10,7 +10,7 @@ function Header({ date, number }) {
 
       <div className="Header-right clearfix">
         <div className="Header-title">
-          Transaction No #{number}
+          Nomor Invoice : {number}
         </div>
         <div className="Header-date">
         {(new Date(date).toDateString())}

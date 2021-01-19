@@ -2263,6 +2263,15 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   font-size: 18px;
   color: #333;
   line-height: 1.5;
+  text-transform: uppercase;
+}
+
+
+.Header-receipt {
+  float: inherit;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
 }
 
 .Header-date {
@@ -2273,8 +2282,8 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 }
 
 .Address {
-  padding: 40px 50px;
-  background-color: #f3f3f3;
+  padding: 10px 50px;
+  background-color:rgba(107,107,107,0.5)
 }
 
 .Address-Block {
@@ -2310,7 +2319,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 .List {
   width: calc(100% - 80px);
   color: #333;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 40px;
 }
 
@@ -2347,9 +2356,8 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 
 .List-totals {
   float: right;
-  width: 280px;
+  width: 240px;
   border-collapse: collapse;
-  margin-top: 25px;
 }
 
 .List-totals tr {
@@ -2370,14 +2378,24 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 
 .Invoice {
   width: 794px;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   padding-bottom: 20px;
-  /* background-color: #fff; */
   background-image: url("../Images/lunas.JPG");
-  /* background-position-y: 50px; */
+  background-position-y: -210px;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: dashed;
+  margin-bottom: 10px;
+}
+
+.Invoice-merc {
+  border-top: dashed;
+  width: 794px;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 20px;
+  background-color: #fff;
 }
 
 .clearfix:after {

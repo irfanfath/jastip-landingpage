@@ -4,7 +4,7 @@ function formatPrice(n) {
   return 'Rp '+ n.toLocaleString('en');
 }
 
-function List({ list, tax, fee }) {
+function ListMerc({ list, tax, fee }) {
   const subtotal = list.reduce((acc, item) => (
     acc + (item.quantity * item.unitPrice)
   ), 0);
@@ -38,27 +38,9 @@ function List({ list, tax, fee }) {
       <table className="List-totals">
         <tbody>
           <tr>
-            <td>Total</td>
-            <td className="List-number">
-              {formatPrice(subtotal)}
-            </td>
-          </tr>
-          <tr>
-            <td>Ongkos Kirim</td>
-            <td className="List-number">
-              {formatPrice(taxes)}
-            </td>
-          </tr>
-          <tr>
-            <td>Biaya Layanan</td>
-            <td className="List-number">
-              {formatPrice(fees)}
-            </td>
-          </tr>
-          <tr>
             <td>Total Bayar</td>
             <td className="List-number">
-              {formatPrice(subtotal + taxes + fees)}
+              {formatPrice(subtotal)}
             </td>
           </tr>
         </tbody>
@@ -67,5 +49,5 @@ function List({ list, tax, fee }) {
   );
 }
 
-export default List;
+export default ListMerc;
 
