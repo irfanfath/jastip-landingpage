@@ -66,14 +66,14 @@ export default class Invoice extends Component {
           
         return(
             <>
-            <div className="Invoice">
-                {this.state.post && <Header date={dataRow.date} number={dataRow.number} />}
-                {this.state.post && <Address recipient={dataRow.recipient} emitter={dataRow.emitter} />}
-                {this.state.post.length > 0 && <List list={dataRow.list} tax={dataRow.tax} fee={dataRow.fee} />}
-            </div>
             <div className="Invoice-merc">
                 {this.state.post && <Header date={dataRow.date} number={dataRow.number} />}
+                {this.state.post && <Address recipient={dataRow.recipient} emitter={dataRow.emitter} />}
                 {this.state.post.length > 0 && <ListMerc list={dataRow.list} tax={dataRow.tax} fee={dataRow.fee} />}
+            </div>
+            <div className="Invoice">
+                {this.state.post && <Header date={dataRow.date} number={dataRow.number} />}
+                {this.state.post.length > 0 && <List list={dataRow.list} tax={dataRow.tax} fee={dataRow.fee} />}
             </div>
             </>
         )

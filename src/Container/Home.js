@@ -47,12 +47,12 @@ class Home extends Component {
                     <img className="play-store" src={android} alt="" />
                   </div>
                   <div className="w-step">
-                    <img src={hpstep} alt=""  width="30%"/>
+                    <img className="w-step-img" src={hpstep} alt="" />
                   </div>
               </div>
               <div className="margin-step">
                   <div className="w-step">
-                    <img src={hp} alt=""  width="30%"/>
+                    <img className="w-step-img"  src={hp} alt="" />
                   </div>
                   <div className="w-step">
                     <div className="hero-step">Registrasi Akun Kamu</div>
@@ -111,7 +111,6 @@ class Home extends Component {
                     </div>
                     <div className="copyright-block right">
                         <div onClick={this.handleFAQ} className="copyright-text right">FAQ</div><div onClick={this.hanleTOC} className="copyright-text right">Term And condition</div><div onClick={this.handlePrv} className="copyright-text right">Privacy policy</div>
-                        {/* <a href="/licensing" className="copyright-text right">Contact us</a> */}
                     </div>
                 </div>
         </footer>

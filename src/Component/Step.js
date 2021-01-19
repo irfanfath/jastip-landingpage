@@ -8,7 +8,7 @@ const Step = (props) => {
                 <p>{props.desc}</p>
             </div>
             <div className="w-step">
-                <img src={props.gambar} alt=""  width="30%"/>
+                <img className="w-step-img"  src={props.gambar} alt="" />
             </div>
         </div>
     )

@@ -1937,7 +1937,11 @@ p {
 
 .w-step {
   width: 50%;
-  display: inline-block;
+  display: inline-table;
+}
+
+.w-step-img {
+  width: 30%;
 }
 
 .margin-step {
@@ -2150,6 +2154,11 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 }
 
 @media (max-width: 991px) {
+  .w-step-img {
+    vertical-align: top;
+    width: 50%;
+}
+
   .app-store {
     cursor: pointer;
     width: 43%;
@@ -2191,6 +2200,10 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 }
 
 @media (max-width: 767px) {
+  .w-step-img {
+    vertical-align: top;
+    width: 50%; 
+  }
   .button.full-width {
       margin-right: auto;
       margin-left: auto;
@@ -2207,7 +2220,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   }
   .hero-heading {
       margin-bottom: 15px;
-      font-size: 50px;
+      font-size: 40px;
   }
   .hero-subheading {
       font-size: 15px;
@@ -2225,6 +2238,10 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 }
 
 @media (max-width: 479px) {
+  .w-step-img {
+    vertical-align: top;
+    width: 50%;
+  }
   .button {
       margin-bottom: 25px;
   }
@@ -2283,7 +2300,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 
 .Address {
   padding: 10px 50px;
-  background-color:rgba(107,107,107,0.5)
+  background-color:rgba(163,163,163,0.5)
 }
 
 .Address-Block {
@@ -2305,7 +2322,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 }
 
 .Address-Block-address {
-  color: #607d8b;
+  color: #000;
   margin: 0;
   font-size: 12px;
   max-width: 320px;
@@ -2385,12 +2402,12 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   background-position-y: -210px;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: dashed;
-  margin-bottom: 10px;
+  border-top: dashed;
+  margin-top: 10px;
 }
 
 .Invoice-merc {
-  border-top: dashed;
+  border-bottom: dashed;
   width: 794px;
   height: 100%;
   overflow: hidden;
@@ -2406,24 +2423,15 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 
 .copyright-block.right {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
+  margin-top: 30px;
 }
 
 .copyright-text {
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.4px;
   text-decoration: none;
@@ -2440,7 +2448,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 .copyright-text.right {
     margin-right: 16px;
     color: #fff;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 20px;
     font-weight: 600;
     cursor: pointer;
