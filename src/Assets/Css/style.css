@@ -1837,7 +1837,7 @@ p {
 
 .section {
   position: relative;
-  padding: 80px 10px;
+  padding: 20px 10px;
   background-color: #fff;
   text-align: center;
 }
@@ -2411,12 +2411,26 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   text-decoration: none;
 }
 
+.copyright-text.left {
+  margin-right: 16px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
 .copyright-text.right {
     margin-right: 16px;
     color: #fff;
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.copyright-text.right:hover {
+  color: gray;
+  cursor: pointer;
 }
 
 .footer-row {

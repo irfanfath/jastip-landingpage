@@ -69,6 +69,17 @@ class Home extends Component {
                     <div className="center off-white section-subheading">Informasi lanjut bagi anda yang ingin bergabung bersama kami</div>
                 </div>
                 <div className="w-row">
+                <div className="w-col w-col-6">
+                        <div className="transparent white-box">
+                            <img
+                                className="fullwidth-image"
+                                src={jastiper}
+                                alt=""
+                            />
+                            <h3 className="white-text">Customer</h3>
+                            <p className="white-text">Buat para Customer yang rindu makanan daerah yuk JastipinAja!</p>
+                        </div>
+                    </div>
                     <div className="w-col w-col-6">
                         <div className="transparent white-box">
                             <img
@@ -80,17 +91,6 @@ class Home extends Component {
                             <p className="white-text">Buat kamu para pelaku usaha pemilik restaurant, rumah makan, warung makan atau yang berminat buka usaha jastip mari bergabung menjadi mitra Merchant kami.</p>
                         </div>
                     </div>
-                    <div className="w-col w-col-6">
-                        <div className="transparent white-box">
-                            <img
-                                className="fullwidth-image"
-                                src={jastiper}
-                                alt=""
-                            />
-                            <h3 className="white-text">Jastiper</h3>
-                            <p className="white-text">Buat para Jastiper yang rindu makanan daerah yuk JastipinAja!</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -100,9 +100,9 @@ class Home extends Component {
             <div className="footer-row"></div>
                 <div className="container flex">
                     <div className="copyright-block">
-                    <div className="copyright-text right">Head Office</div>
+                    <div className="copyright-text left">Head Office</div>
                     <div className="copyright-block">
-                        <p className="copyright-text right">Aldeoz Building Jl. Warung Jati Barat No 39, RT.1/RW.9, Kalibata, Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12740</p>
+                        <p className="copyright-text left">Aldeoz Building Jl. Warung Jati Barat No 39, RT.1/RW.9, Kalibata, Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12740</p>
                     </div>
                         <div className="copyright-text">© 2021 - JastipinAja!</div>
                         <div className="copyright-text">
@@ -110,7 +110,7 @@ class Home extends Component {
                         </div>
                     </div>
                     <div className="copyright-block right">
-                        <div onClick={this.handleFAQ} className="copyright-text right">FAQ</div><div onClick={this.hanleTOC} className="copyright-text right">Term of condition</div><div onClick={this.handlePrv} className="copyright-text right">Privacy policy</div>
+                        <div onClick={this.handleFAQ} className="copyright-text right">FAQ</div><div onClick={this.hanleTOC} className="copyright-text right">Term And condition</div><div onClick={this.handlePrv} className="copyright-text right">Privacy policy</div>
                         {/* <a href="/licensing" className="copyright-text right">Contact us</a> */}
                     </div>
                 </div>

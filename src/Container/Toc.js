@@ -6,7 +6,7 @@ export default class Toc extends Component {
             <div className="row">
                 <div className="margin-body">
                     <header className="entry-title">
-                        <h2>Term of Condition</h2>
+                        <h2>Term And Condition</h2>
                     </header>
                     <div className="post-content">
                         <span>Selamat datang di Aplikasi JastipinAja!</span>

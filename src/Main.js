@@ -15,7 +15,7 @@ class Main extends Component {
                 <DynamicScrollToTop/>
                     <Route exact path="/" component={Home}/>
                     <Route path="/faq" component={Faq}/>
-                    <Route path="/toc" component={Toc}/>
+                    <Route path="/tac" component={Toc}/>
                     <Route path="/privacy" component={Privacy}/>
                     <Route path="/question" component={Question}/>
                     <Route path="/invoice/:idtrx" component={Invoice}/>

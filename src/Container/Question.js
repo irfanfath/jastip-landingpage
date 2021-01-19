@@ -35,7 +35,7 @@ export default class Question extends Component {
         return(
             <div id="FAQ" className="section">
                 <div className="block-content">
-                    <h2 className="section-title">Term Of Condition</h2>
+                    <h2 className="section-title">Term And Condition</h2>
                         <input type="text" onChange={(e) => this.setState({nama: e.target.value})} />
                         <br/>
                         <input type="text" onChange={(e) => this.setState({email: e.target.value})} />
