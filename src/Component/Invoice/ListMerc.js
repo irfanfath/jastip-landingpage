@@ -4,12 +4,10 @@ function formatPrice(n) {
   return 'Rp '+ n.toLocaleString('en');
 }
 
-function ListMerc({ list, tax, fee }) {
+function ListMerc({ list }) {
   const subtotal = list.reduce((acc, item) => (
     acc + (item.quantity * item.unitPrice)
   ), 0);
-  const taxes = tax;
-  const fees = fee
 
   return (
     <div className="List">
