@@ -10,7 +10,7 @@ import jastiper from "../Assets/Images/jastiper.jpg"
  
 class Home extends Component {
     hanleTOC = () => {
-        this.props.history.push('/toc')
+        this.props.history.push('/tac')
     }
 
     handleFAQ = () => {
