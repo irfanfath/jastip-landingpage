@@ -9,7 +9,7 @@ import merchant from "../Assets/Images/merchant.jpg"
 import jastiper from "../Assets/Images/jastiper.jpg"
  
 class Home extends Component {
-    hanleTOC = () => {
+    handleTac = () => {
         this.props.history.push('/tac')
     }
 
@@ -21,9 +21,22 @@ class Home extends Component {
         this.props.history.push('/privacy')
     }
 
+    handleAbt = () => {
+        this.props.history.push('/about')
+    }
+
   render() {
     return (
     <>
+      <div className="header-small">
+        <div className="font-header">
+            <div className="margin-font" onClick={this.handleFAQ}>FAQ</div>
+            <div className="margin-font" onClick={this.handleTac}>Term and condition</div>
+            <div className="margin-font" onClick={this.handlePrv}>Privacy policy</div>
+            <div className="margin-font" onClick={this.handleAbt}>About Us</div>
+        </div>
+        
+      </div>
       <div className="centered hero-section">
           <div className="w-container">
             <div className="hero-subheading">Rindu makanan daerah kamu?</div>
@@ -100,18 +113,18 @@ class Home extends Component {
             <div className="footer-row"></div>
                 <div className="container flex">
                     <div className="copyright-block">
-                    <div className="copyright-text left">Head Office</div>
+                    {/* <div className="copyright-text left">Head Office</div>
                     <div className="copyright-block">
                         <p className="copyright-text left">Aldeoz Building Jl. Warung Jati Barat No 39, RT.1/RW.9, Kalibata, Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12740</p>
-                    </div>
+                    </div> */}
                         <div className="copyright-text">© 2021 - JastipinAja!</div>
                         <div className="copyright-text">
                         JastipinAja! dioperasikan oleh PT.Anjana Nata Alam yang terdaftar pada Kementrian Hukum dan HAM Republik Indonesia.
                         </div>
                     </div>
-                    <div className="copyright-block right">
+                    {/* <div className="copyright-block right">
                         <div onClick={this.handleFAQ} className="copyright-text right">FAQ</div><div onClick={this.hanleTOC} className="copyright-text right">Term And condition</div><div onClick={this.handlePrv} className="copyright-text right">Privacy policy</div>
-                    </div>
+                    </div> */}
                 </div>
         </footer>
 
