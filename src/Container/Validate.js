@@ -24,8 +24,7 @@ export default class Validate extends Component {
             }
         }).catch(() => {
             alert("Proses Validasi Gagal")
-            window.open("about:blank", "_self");
-            window.close();
+            this.props.history.push("/failed")
         })
     } 
 

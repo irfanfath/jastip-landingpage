@@ -8,6 +8,8 @@ import Home from "./Container/Home";
 import Invoice from "./Container/Invoice";
 import Privacy from "./Container/Privacy";
 import Question from "./Container/Question";
+import Success from "./Container/Success";
+import Failed from "./Container/Failed";
 import Toc from "./Container/Toc";
 import Validate from "./Container/Validate";
 
@@ -23,6 +25,8 @@ class Main extends Component {
                     <Route path="/about" component={About}/>
                     <Route path="/validate/:validId" component={Validate}/>
                     <Route path="/forgot/:verifId" component={Forgot}/>
+                    <Route path="/success" component={Success}/>
+                    <Route path="/failed" component={Failed} />
                     <Route path="/question" component={Question}/>
                     <Route path="/invoice/:idtrx" component={Invoice}/>
             </HashRouter>

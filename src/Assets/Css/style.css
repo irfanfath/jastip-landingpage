@@ -2587,6 +2587,10 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   background-color: #1e3560;
 }
 
+.text-success {
+  font-size: 28px;
+}
+
 @media (max-width: 991px) {
   .margin-font {
     font-size: 11px;
@@ -2601,5 +2605,9 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   .w-forgot {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .logo-sukses {
+    width: 20%;
   }
 }

@@ -26,8 +26,8 @@ export default class Forgot extends Component {
                 alert("Verifikasi Gagal")
             }
         }).catch(() => {
-            window.open("about:blank", "_self");
-            window.close();
+            alert("Proses Validasi Gagal")
+            this.props.history.push("/failed")
         })
     } 
 
@@ -47,11 +47,10 @@ export default class Forgot extends Component {
                 }
             }).then((res) => {
                 if(res.status === 200){
-                    alert("berhasil ganti password")
-                    window.open("about:blank", "_self");
-                    window.close();
+                    alert("Berhasil ganti password")
+                    this.props.history.push("/success")
                 }else {
-                    alert("gagal ganti password")
+                    alert("Gagal ganti password")
                 }
             })
         } else {
