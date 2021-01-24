@@ -9,7 +9,7 @@ export default class Forgot extends Component {
         newpass: "",
         repass: "",
     }
-    
+
     getPostAPI = () => {
         let id = this.props.match.params.verifId
         axios.get(`https://api.jastipinaja.co.id/auth/forgot_password/${id}`, {
@@ -39,7 +39,7 @@ export default class Forgot extends Component {
                 "password" : pass
             }
             const data = payload
-            axios.patch(`https://api.jastipinaja.co.id/auth/forgot_password/111`, data, {
+            axios.patch(`https://api.jastipinaja.co.id/auth/forgot_password/${id}`, data, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                     Accept: "application/json",
@@ -58,7 +58,6 @@ export default class Forgot extends Component {
             alert("Password Tidak Sesuai")
         }   
     }
-    
 
     componentDidMount(){
         this.getPostAPI()
@@ -76,7 +75,7 @@ export default class Forgot extends Component {
                             <input type="password" className="footer-input w-input" placeholder="Password Baru" id="newpass" required=""  onChange={(e) => this.setState({newpass: e.target.value})} />
                             <input type="password" className="footer-input w-input" placeholder="Ulangi Password" id="repass" required=""  onChange={(e) => this.setState({repass: e.target.value})} />
                         </div>
-                        <button className="button-forgot" onClick={this.handleUpdate}>Submit</button>
+                        <button className="button-forgot" onClick={()=> this.handleUpdate(this.props.match.params.verifId)} >Submit</button>
                     </div>
                 </div>
           </div>
