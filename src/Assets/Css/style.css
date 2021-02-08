@@ -344,7 +344,7 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 10px;
-  padding-left: 40px;
+  padding-left: 20px;
 }
 .w-list-unstyled {
   padding-left: 0;
@@ -1158,9 +1158,6 @@ textarea.w-select {
   z-index: 2000;
   outline: 0;
   opacity: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
 .w-lightbox-backdrop,
