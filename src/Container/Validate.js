@@ -34,7 +34,7 @@ export default class Validate extends Component {
 
   render() {
     return (
-          <div className="section">
+          <div className="section-failed">
             <img src={logo} alt="" />
             <h5>Harap Tunggu...</h5>
           </div>

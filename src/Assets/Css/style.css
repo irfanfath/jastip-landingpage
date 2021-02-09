@@ -1836,6 +1836,13 @@ p {
 
 .section {
   position: relative;
+  padding: 20px 10px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.section-failed {
+  position: relative;
   height: 100vh;
   padding: 20px 10px;
   background-color: #fff;

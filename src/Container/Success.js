@@ -5,7 +5,7 @@ import sukses from "../Assets/Images/success.png"
 export default class Success extends Component {
   render() {
     return (
-      <div className="section">
+      <div className="section-failed">
         <img src={logo} alt="" />
         <div className="text-success">
         <img src={sukses} className="logo-sukses" width="5%" alt="" /> <br/><br/>
