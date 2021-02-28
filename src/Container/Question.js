@@ -28,7 +28,6 @@ export default class Question extends Component {
             }else {
                 alert("Terjadi kesalahan, silahkan coba kembali")
             }
-            this.props.history.push('/')
         })
     }
 
