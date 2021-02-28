@@ -14,6 +14,7 @@ import Toc from "./Container/Toc";
 import Validate from "./Container/Validate";
 import TrxSuccess from "./Container/TrxSuccess";
 import TrxFail from "./Container/TrxFail";
+import TrxWait from "./Container/TrxWait";
 
 class Main extends Component {
     render(){
@@ -30,6 +31,7 @@ class Main extends Component {
                     <Route path="/success" component={Success}/>
                     <Route path="/trxsuccess" component={TrxSuccess}/>
                     <Route path="/trxfail" component={TrxFail}/>
+                    <Route path="/trxwait" component={TrxWait}/>
                     <Route path="/failed" component={Failed} />
                     <Route path="/question" component={Question}/>
                     <Route path="/invoice/:idtrx" component={Invoice}/>
