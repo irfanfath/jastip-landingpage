@@ -2593,6 +2593,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 
 .text-success {
   font-size: 28px;
+  line-height: 3rem;
 }
 
 @media (max-width: 991px) {
@@ -2635,10 +2636,11 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 .button-question {
   background-color: #365daa;
   border-radius: 7px;
-  width: 200px;
+  width: 250px;
   font-size: 28px;
   font-weight: bold;
   height: 50px;
   margin-bottom: 20px;
+  margin-top: 20px;
   color: #fff;
 }
