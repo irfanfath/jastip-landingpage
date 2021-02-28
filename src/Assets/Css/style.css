@@ -2615,3 +2615,30 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
     width: 20%;
   }
 }
+
+.input-question {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.question-margin {
+  width: 50%;
+}
+
+.button-question {
+  background-color: #365daa;
+  border-radius: 7px;
+  width: 200px;
+  font-size: 28px;
+  font-weight: bold;
+  height: 50px;
+  margin-bottom: 20px;
+  color: #fff;
+}
