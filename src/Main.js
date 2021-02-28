@@ -13,6 +13,7 @@ import Failed from "./Container/Failed";
 import Toc from "./Container/Toc";
 import Validate from "./Container/Validate";
 import TrxSuccess from "./Container/TrxSuccess";
+import TrxFail from "./Container/TrxFail";
 
 class Main extends Component {
     render(){

@@ -9,7 +9,7 @@ export default class TrxSuccess extends Component {
         <img src={logo} alt="" />
         <div className="text-success">
         <img src={sukses} className="logo-sukses" width="5%" alt="" /> <br/><br/>
-            Pembayaran Berhasil</div>
+            Pembayaran Anda Berhasil</div>
       </div>
     );
   }

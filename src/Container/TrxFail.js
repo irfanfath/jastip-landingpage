@@ -9,7 +9,7 @@ export default class TrxFail extends Component {
         <img src={logo} alt="" />
         <div className="text-success">
         <img src={sukses} className="logo-sukses" width="5%" alt="" /> <br/><br/>
-            Pembayaran Gagal</div>
+            Transaksi Anda Gagal, Silahkan Hubungi Admin Kami</div>
       </div>
     );
   }
