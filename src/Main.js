@@ -12,6 +12,7 @@ import Success from "./Container/Success";
 import Failed from "./Container/Failed";
 import Toc from "./Container/Toc";
 import Validate from "./Container/Validate";
+import TrxSuccess from "./Container/TrxSuccess";
 
 class Main extends Component {
     render(){
@@ -26,6 +27,8 @@ class Main extends Component {
                     <Route path="/validate/:validId" component={Validate}/>
                     <Route path="/forgot/:verifId" component={Forgot}/>
                     <Route path="/success" component={Success}/>
+                    <Route path="/trxsuccess" component={TrxSuccess}/>
+                    <Route path="/trxfail" component={TrxFail}/>
                     <Route path="/failed" component={Failed} />
                     <Route path="/question" component={Question}/>
                     <Route path="/invoice/:idtrx" component={Invoice}/>
