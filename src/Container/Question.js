@@ -24,9 +24,9 @@ export default class Question extends Component {
             }
         }).then((res) => {
             if(res.status === 200){
-                alert("berhasil menambahkan data")
+                alert("Pertanyaan anda berhasil dikirim")
             }else {
-                alert("gagal menambahkan data")
+                alert("Terjadi kesalahan, silahkan coba kembali")
             }
             this.props.history.push('/')
         })
@@ -46,7 +46,8 @@ export default class Question extends Component {
                         <textarea className="input-question"type="text" placeholder="Message" onChange={(e) => this.setState({pesan: e.target.value})}/>
                         <br/>
                         <button className="button-question" onClick={this.handleSubmit}>Submit</button>
-                <div className>Any Question? <a href="jastipinaja@aldeoz.com">Email us</a></div>
+                <div>Any Question? <a href="mailto:jastipinaja@aldeoz.com">Email us</a></div>
+                <a>jastipinaja@aldeoz.com</a>
             </div>
             // <div id="FAQ" className="section">
             //     <div className="block-content">
