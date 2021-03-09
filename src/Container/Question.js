@@ -46,23 +46,8 @@ export default class Question extends Component {
                         <br/>
                         <button className="button-question" onClick={this.handleSubmit}>Submit</button>
                 <div>Any Question? <a href="mailto:jastipinaja@aldeoz.com">Email us</a></div>
-                <a>jastipinaja@aldeoz.com</a>
+                <div>jastipinaja@aldeoz.com</div>
             </div>
-            // <div id="FAQ" className="section">
-            //     <div className="block-content">
-            //         <h2 className="section-title">Question</h2>
-            //             <input type="text" onChange={(e) => this.setState({nama: e.target.value})} />
-            //             <br/>
-            //             <input type="text" onChange={(e) => this.setState({email: e.target.value})} />
-            //             <br/>
-            //             <input type="number" onChange={(e) => this.setState({no_ponsel: e.target.value})} />
-            //             <br/>
-            //             <input type="text" onChange={(e) => this.setState({pesan: e.target.value})}/>
-            //             <br/>
-            //             <button onClick={this.handleSubmit}>Submit</button>
-            //         <div>Any Question? <a href="jastipinaja@aldeoz.com">Email us</a></div>
-            //     </div>
-            // </div>
         )
     }
 }
