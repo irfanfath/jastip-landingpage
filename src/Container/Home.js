@@ -29,6 +29,10 @@ class Home extends Component {
         window.open("https://apps.apple.com/us/app/jastipinaja/id1555013354")
     }
 
+    handlePlaystore = () => {
+        window.open("https://play.google.com/store/apps/details?id=com.jastip")
+    }
+
   render() {
     return (
     <>
@@ -46,7 +50,7 @@ class Home extends Component {
             <div className="hero-subheading">Rindu makanan daerah kamu?</div>
             <h1 className="hero-heading">JastipinAja!</h1>
             <img className="app-store" src={apple} alt="" onClick={this.handleAppstore} />
-            <img className="play-store" src={android} alt="" />
+            <img className="play-store" src={android} alt="" onClick={this.handlePlaystore} />
           </div>
           <img className="icon-phone" src={hp} alt="" />
       </div>
@@ -61,7 +65,7 @@ class Home extends Component {
                     <div className="hero-step">Unduh Aplikasinya</div>
                     <p>Unduh Aplikasi JastipinAja! di App Store (IOS) atau Play Store (Android)</p>
                     <img className="app-store" src={apple} alt="" onClick={this.handleAppstore}/>
-                    <img className="play-store" src={android} alt="" />
+                    <img className="play-store" src={android} alt="" onClick={this.handlePlaystore} />
                   </div>
                   <div className="w-step">
                     <img className="w-step-img" src={hpstep} alt="" />
